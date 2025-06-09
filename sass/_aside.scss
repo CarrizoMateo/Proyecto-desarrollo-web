@@ -1,0 +1,35 @@
+aside {
+    grid-area: aside;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.sneakers-slider {
+    overflow: hidden;
+    background-color: #000000;
+    color: #e9e1d9;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 0;
+    border-top: 3px solid #f17e2c;
+    border-bottom: 3px solid #f17e2c;
+    white-space: nowrap;
+    position: relative;
+}
+.slider-track {
+    display: flex;
+    width: fit-content;
+    animation: scroll 10s linear infinite;
+}
+.slider-track span {
+    margin-right: 60px;
+    font-family: "Rubik Wet Paint", cursive;
+    letter-spacing: 4px;
+}
+@keyframes scroll {
+    0% {
+    transform: translateX(100%);
+    }
+    100% {
+    transform: translateX(-50%);
+    }
+}
